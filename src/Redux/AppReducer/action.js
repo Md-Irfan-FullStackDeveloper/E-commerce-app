@@ -19,7 +19,7 @@ import {
   GET_DATA_SUCCESS,
 } from "./actionType";
 
-export const url = "https://my-json-server-live.herokuapp.com";
+export const url = "https://e-commmerce-api.onrender.com";
 
 export const getData = (category, queryParams) => (dispatch) => {
   dispatch({ type: GET_DATA_REQUEST });

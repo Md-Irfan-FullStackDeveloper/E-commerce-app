@@ -55,13 +55,13 @@ const CartItem = ({ data, forceUpdate, setQuantity, setProductPrice }) => {
     >
       <Flex gap="2rem" flexDirection={["column", "row"]}>
         <Box w={["100%", "100px"]}>
-          <Image src={data.image[0].src} objectFit="contain" />
+          <Image src={data?.image[0].src} objectFit="contain" />
         </Box>
 
         <Stack spacing="1rem">
           <Box>
-            <Text>{data.title}</Text>
-            <Text>Rs. {data.price}</Text>
+            <Text>{data?.title}</Text>
+            <Text>Rs. {data?.price}</Text>
           </Box>
 
           <Flex
@@ -71,9 +71,9 @@ const CartItem = ({ data, forceUpdate, setQuantity, setProductPrice }) => {
             justify="space-between"
           >
             <Text fontSize="12px" fontWeight="500">
-              Art.no. {data.id}
+              Art.no. {data?.id}
             </Text>
-            <Text>Color: {data.swatches[0].colorName}</Text>
+            <Text>Color: {data?.swatches[0].colorName}</Text>
           </Flex>
 
           <Box>
